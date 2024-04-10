@@ -1,0 +1,208 @@
+<!-- BONUS: Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far (and a few extras) with a description of how to use them and code examples.
+BONUS
+
+* Use an external stylesheet.
+* Be creative with your styling, but keep it professional.
+* Use the `<code>` and `<pre>` HTML tags to include code examples. 
+* Include a minimum of 10 HTML tags.
+* Include a minimum of 8 CSS properties.
+* Include a variety of different headers.
+* Make sure the code is indented and spaced properly.
+-->
+
+<!--image tag has to be with 
+put all images in the folder-->
+<!--
+    <div> : div tag keeps images not in the background
+-->
+<!--
+    For my exercise 1, I used inline css styling and internal css styling method. 
+    For my bonus, I decided to explore external stylesheet.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>good food to eat</title>
+  <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+<!--
+This links my html file to my stylesheet.
+-->
+  <link rel="stylesheet" href="bonus1-external/style.css">
+
+  <!-- 
+    css code in html is defined with curly brackets.
+
+    1. inline: style within same html file
+    2. internal: less redundant than inline
+    3. external: most organized
+  -->
+
+</head>
+
+<body style="background-color:rgb(255, 255, 255);">
+  <header>
+    <img class="logo" scr="bonus1-external\bonus1-images\Good to Eat!.jpg" alt="logo">
+    <h1> good food to eat</h1>
+
+<!--nav tag is good to make a navigation element -->
+       <nav class="navbar">
+        <ul>
+          <li><a href="">Recipe</a></li>
+          <li><a href="">Ingredients</a></li>
+          <li><a href="">Cooking</a></li>
+          <li><a href="">Culture</a></li>
+        </ul>
+       </nav>
+
+<!--main section of homepage-->       
+       <main>
+        <h3>About </h3>
+        <p>good food to eat is a digital recipe book for those days when you can't figure out what you want to eat.</p>
+       </main>
+
+  </header>
+     
+
+<!--images-->
+  <div class="recipe1">
+    <a href=""></a>
+    <img src="bonus1-external/bonus1-images/aglioeolio.jpg" height="300" alt="Aglio e Olio" title="Aglio e Olio">
+    <img src="recipe2.jpg" alt="Mexican Shredded Chicken">
+    <img src="recipe3.jpg" alt="">
+  </div>
+
+
+<!-- new recipe: Aglio e Olio -->
+  <section class="recipe">
+    <h2> AGLIO E OLIO</h2>
+    <h4>Spaghetti Aglio e Olio is a classic Italian pasta sauce that only requires three ingredients (spaghetti, olive oil, garlic), takes 20 minutes to make, and never fails to impress!</h4>
+
+<!-- unordered list for ingredients -->
+    <ul>
+      <li>1 pound dried spaghetti</li>
+      <li>1/2 cup good-quality olive oil</li>
+      <li>6 to 8 cloves garlic, very thinly sliced</li>
+<!-- ordered list for ingredients -->
+      <ol>
+        <li>optional garnishes: chopped fresh parsley, freshly-grated Parmesan cheese</li>
+      </ol>
+    </ul>
+    <h3>INSTRUCTIONS</h3>
+<!-- this div is to make a scrolling box to fit my instructions. I used 'pre' to make this code work-->
+    <div style="width:1000px;overflow:auto">
+      <pre>1. Cook the spaghetti. Bring a large stockpot of generously-salted water to a boil.  
+        Add spaghetti and cook until nearly al dente (like, just one minute shy of being done).
+      
+2. Sauté the garlic. Meanwhile, about 3 minutes after you add the pasta to the boiling water, 
+   heat the olive oil in a large sauté pan over medium heat.  
+   Add the sliced garlic and crushed red pepper flakes and sauté for 3 to 5 minutes, 
+   or until it is lightly golden. (It’s very important that the garlic not burn.  
+   So if the pasta is not ready to go by the time the garlic is lightly golden,
+    remove the sauté pan from the heat until the pasta is ready.)
+        
+3. Toss the pasta in the sauce. As soon as the pasta is ready to go, use tongs to transfer
+   the pasta to the sauté pan, along with 1/2 cup of the hot starchy pasta water. 
+   Toss the pasta continuously until it is evenly coated in the garlic sauce. 
+    If the sauce looks a bit too dry, add in another 1/4 cup of the starchy pasta water.
+        
+4. Taste and season. Give the pasta a quick taste add an extra pinch of salt and/or crushed
+ red pepper flakes if needed.
+        
+5. Serve. Serve immediately while it’s nice and hot, garnished with any toppings that sound good.
+      
+      </pre>
+      </div>
+  </section>
+
+
+
+<!-- new recipe: Mexican Shredded Chicken -->
+  <section class="recipe">
+    <h2>Mexican Shredded Chicken</h2>
+    <h4>Spaghetti Aglio e Olio is a classic Italian pasta sauce that only requires three ingredients (spaghetti, olive oil, garlic), takes 20 minutes to make, and never fails to impress!</h4>
+<!-- unordered list for ingredients -->
+    <ul>
+      <li>2.5 to 3 pounds boneless skinless chicken breasts (or thighs)</li>
+      <li>2 cups (16 ounces) salsa*, homemade or store-bought</li>
+      <li>1 packet McCormick Original Taco Seasoning</li>
+    </ul>
+    <h3>INSTRUCTIONS</h3>
+<!-- this div is to make a scrolling box to fit my instructions. I used 'pre' to make this code work-->
+    <div style="width:1000px;overflow:auto">
+      <pre>1. Crock-Pot Method: Add chicken, salsa and taco seasoning to the bowl
+        of your slow cooker, and toss briefly to combine. Cover and cook on high
+        for 3-4 hours or on low for 6-8 hours until the chicken shreds easily with a fork.
+      
+2. Shred the chicken with two forks, then give the chicken a good toss with the remaining juices.
+        
+3. Serve immediately.  Or store in an airtight container in the refrigerator for up to 3 days,
+ or in the freezer for up to 3 months.
+      </pre>
+      </div>
+  </section>
+
+
+
+
+<!-- new recipe: Gochujang Lettuce Wraps -->
+  <section class="recipe">
+    <h2>Gochujang Lettuce Wraps</h2>
+    <h4>This quick Gochujang Lettuce Wraps recipe is easy to make in about 20 minutes with veggies and your choice of beef, chicken, pork, shrimp or tofu. And it is made with the absolute yummiest 4-ingredient sesame gochujang sauce.</h4>
+    <h3>LETTUCE WRAPS:</h3>
+<!-- unordered list for ingredients -->
+    <ul>
+      <li>1 pound steak (or chicken, pork, shrimp or tofu*), sliced into bite-sized pieces</li>
+      <li>1 tablespoon oil</li>
+      <li>4 cloves garlic, thinly sliced or minced</li>
+      <li>8–10 butter lettuce leaves</li>
+      <li>1 cup thinly sliced English cucumber</li>
+      <li>1 cup shredded carrots</li>
+<!-- ordered list for ingredients -->
+      <ol>
+      <li>optional garnishes: thinly-sliced green onions and toasted sesame seeds</li>
+      </0l>
+    </ul>
+
+<!-- separate ingredient list-->
+    <h3>GOCHUJANG SAUCE:</h3>
+<!-- unordered list for ingredients -->
+    <ul>
+      <li>3 tablespoons gochujang paste</li>
+      <li>2 tablespoons low-sodium soy sauce</li>
+      <li>1 tablespoon honey</li>
+      <li>1/2 teaspoon toasted sesame oil</li>
+      <li>1 cup thinly sliced English cucumber</li>
+      <li>1 cup shredded carrots</li>
+    </ul>
+
+    <h3>INSTRUCTIONS:</h3>
+    <div style="width:1000px;overflow:auto">
+      <pre>1. Make the sauce. Whisk together all sauce ingredients in a small bowl until combined.  
+        Taste and add any extra maple syrup (to sweeten) or gochujang (for spice) if would like.
+        
+2. Cook the protein. Season the steak (or your preferred protein) with a few generous pinches
+      of salt and pepper. Heat oil in a large sauté pan or wok over high heat.
+      Add the steak and garlic and sauté for 4-5 minutes, stirring occasionally,
+      until the steak is browned and tender. Remove pan from heat and stir in half 
+      of the gochujang sauce until it has evenly coated the steak.
+  
+3. Assemble the lettuce wraps. Portion a spoonful of the saucy steak into each lettuce cup,
+      topped with a few cucumbers and carrots, an extra small drizzle of the remaining sauce, 
+      and your desired garnishes.
+             
+4. Serve warm. And enjoy!
+      </pre>
+      </div>
+
+  </section>
+
+
+</body>
+</html>
