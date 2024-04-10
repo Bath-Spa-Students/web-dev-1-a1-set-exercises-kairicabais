@@ -1,0 +1,203 @@
+<!--### One-page website:
+
+Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+
+* An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find. 
+* A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+* A link to the actual website of the film/game etc. which opens in a new tab when clicked. 
+* Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+* At least two classes. 
+* One link styled as a button.-->
+
+<!-- navigation bar -->
+
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, intitial-scale=1" />
+            <title>Movie.html</title>
+            <link rel="stylesheet" href="bonus2 external/style.css">
+<!--import font through style tag-->
+            <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                rel="stylesheet">
+            <style>
+                body {
+                    .poppins-light {
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                    }
+                    font-family: "Poppins", sans-serif;
+                }
+
+
+
+            </style>
+        </head>
+        <body>
+
+            <!-- navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#About"> About </a></li>
+                    <li><a href="#Synopsis"> Synopsis </a></li>
+                    <li><a href="#Cast"> Cast </a></li>
+                    <li><a href="#Production"> Production </a></li>
+                </ul>
+            </nav>
+            <br />
+            <br />
+
+            <!--movie title and in-line styling-->
+            <h1 style="text-align: center; color: #07023f;">Sharktale (2004)</h1>
+
+            <!-- button -->
+            <button onclick="">Load more</button>
+            <br>
+
+            <div class="row">
+                <div class="column left" style="background-color: #5b52c6; color: aliceblue;">
+                    <h2>Navigation</h2>
+                    <p>Redirects to links only on this current page</p>
+                        <ul style="list-style-type: none;">
+                            <li><a href="#About"> About </a></li>
+                            <li><a href="#Synopsis"> Synopsis </a></li>
+                            <li><a href="#Cast"> Cast </a></li>
+                            <li><a href="#Production"> Production </a></li>
+                            <li><a href="#Reviews"> Reviews</a></li>
+                        </ul>
+                </div>
+
+                <!-- middle column in 3 column design page-->
+                <div class="column middle" style="background-color: #a8e1fc; color: #07023f;">
+                    <img src="external/Sharktale.jpg" alt="sharktale image poster"
+                    <!--organized breaks with br tag-->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h2 id style="text-align: center;">About</h2>
+
+                    <p style="text-align: center;">
+                        Shark Tale is a 2004 American animated comedy film from DreamWorks. The film was directed by Vicky Jenson, Bibo Bergeron, and Rob Letterman, from a screenplay written by Letterman and Michael J.
+                    </p>
+
+                    <br />
+                    <br />
+                    <!-- id tag -->
+                    <h1 id="Synopsis">Synopsis</h1>
+                    <p>
+                        So, there's this little fish named Oscar, bit of a dreamer but stuck in a dead-end job cleaning whales' tongues. He's not exactly living the high life. Anyway, things get wild when the son of a notorious shark mob
+                        boss gets accidentally whacked, and Oscar ends up taking credit for it!
+                        <br />
+                        <br />
+                        This throws him into the deep end (pun intended) because the boss, a real tough guy voiced by Robert De Niro, is after revenge. Oscar teams up with the shark's surprisingly vegetarian brother, Lenny (think Jack Black
+                        as a peace-loving shark), to keep up the whole "shark slayer" act. It's hilarious chaos as Oscar tries to navigate this crazy underworld while Lenny wrestles with his non-predatory urges.
+                        <br />
+                        <br />
+                        Will Oscar come clean? Will Lenny learn to, you know, actually eat meat? You'll have to dive into the movie to find out! It's a fun ride with some great characters and a whole lot of undersea adventure.
+                    </p>
+
+                    <br />
+                    <br />
+                    <!-- id tag -->
+                    <h1 id="Cast">Cast</h1>
+                    <h4>Here are some of the main cast members of Shark Tale:</h4>
+                    <!-- unordered list for Cast in default disc shape bullets-->
+                    <ul style="list-style-type: disc;">
+                        <li><b>Will Smith</b> as Oscar, the fast-talking fish who gets tangled up with the mob.</li>
+                        <li><b>Robert De Niro</b> as Don Lino, the tough mob shark boss.</li>
+                        <li><b>Renée Zellweger</b> as Angie, Oscar's love interest.</li>
+                        <li><b>Jack Black</b> as Lenny, Don Lino's surprisingly vegetarian shark son.</li>
+                        <li><b>Angelina Jolie</b> as Lola, a seductive gold-digger fish who uses Oscar.</li>
+                        <li><b>Martin Scorsese</b> as Sykes, Don Lino's lawyer (voiced by the famous director himself!).</li>
+                    </ul>
+
+                    <br />
+                    <br />
+                    <!-- id tag -->
+                    <h1 id="Production">Production</h1>
+                    <!-- unordered list for Cast in no bullet form-->
+                    <ul style="list-style-type: none;">
+                        <li><b>Directors:</b> Bill Pullman, Vicky Jenson and Rob Letterman</li>
+                        <li><b>Producers:</b> Bill Damaschke, Janet Healy, Allison Lyon Segan</li>
+                        <br />
+                        <br />
+                    <li>Writing Credit & Screenplay</li>
+                        <ul style="list-style-type: disc;">
+                            <li>Michael J. Wilson</li>
+                            <li>Rob Letterman</li>
+                            <li>Alec Berg</li>
+                            <li>Scott Aukerman</li>
+                        </ul>
+                        <br />
+                        <li><b>Executive Producer:</b> Jeffrey Katzenberg</li>
+                        <li><b>Production company:</b> DreamWorks Animation</li>
+                        <li><b>Music:</b> Hans Zimmerman</li>
+                    </ul>
+                </div>
+
+                <div class="column right" style="background-color: #eaaa57;">
+                    <!-- id tag -->
+                    <h1 id="Reviews">Reviews</h1>
+                    <!-- hyperlink to go to google reviews page on web-->
+                    <a href="https://www.google.com/search?q=shark+tale+review&sca_esv=361d108b9e725553&sca_upv=1&rlz=1C1KNTJ_enAE1073AE1073&ei=-3gWZvD5HIK-xc8P5-mo6Ak&ved=0ahUKEwiw46y8xreFAxUCX_EDHec0Cp0Q4dUDCBA&uact=5&oq=shark+tale+review&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXNoYXJrIHRhbGUgcmV2aWV3MgsQABiABBiKBRiRAjIFEAAYgAQyCBAAGBYYHhgPMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpQ1Q1QNYhwtwAHgCkAEAmAHnA6ABpxOqAQUzLTMuM7gBA8gBAPgBAZgCB6ACzBPCAgQQABhHwgIKEAAYgAQYigUYQ8ICBRAuGIAEmAMAiAYBkAYIkgcHMS4zLTMuM6AH4Sw&sclient=gws-wiz-serp#:~:text=521%20ratings-,Audience%20reviews,-I%27ve%20been%20completely">google reviews</a>
+                    <br />
+                    <br />
+                    <!--separate div within a div to create decorative boxes to contain the individual reviews-->
+                    <div style="background-color: rgb(248, 224, 136); padding: 10%;">
+                        <!--Username and Emoji-->
+                        <h4>Luka Rota &#128525; <small>8 months ago</small></h4>
+                        <!--5 Star emoji for rating-->
+                        <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                        <p>
+                            The Godfather, Goodfellas, The Irishman, and Shark Tale all have two things in common: Robert De Niro and the mafia… But only one of these films also features animated sharks, so I ask you, which film is the real
+                            cinema classic?
+                            <br />
+                            <br />
+                            DreamWorks Studio and Oscar-nominated (I’m not joking!) 2004 feature Shark Tale is an underrated masterpiece, despite what any haters say! It's got everything you could ever ask for: humour, a strong moral
+                            centre, sexy fish, and even the mob. No matter how old you are, there is something to grab your attention in this film! Each time you watch it, a new joke pops up or a quote sticks in your head. It's a top tier
+                            cinematic experience that should get more love!
+                            <br />
+                            <br />
+                            Shark Tale’s star-studded voice cast is quite the catch, too… The cast have perfect comedic chemistry and they bring their real-life personas to their animated fishy counterparts. From Will Smith, Jack Black,
+                            Robert De Niro, Angelina Jolie, Bob Marley’s son and even Martin Scorsese!
+                            <br />
+                            <br />
+                            At every turn, there are fish puns that you can’t help but smile and roll your eyes at like the seahorse race track, Coral-Cola billboards, and the ever-informative news reporter, Katie Current… The soundtrack,
+                            which keeps the momentum going through the whole film, is a perfect early 2000s gem of a track that includes many hit songs, and a Hans Zimmer score to round it all out.
+                            <br />
+                            <br />
+                            Yes, it's technically a gangster film… Yes, it’s FULL of fish puns! But the messages of accepting who you are and the damage that lying can do are timeless. Through tense trials and the power of real friendship,
+                            the characters learn to accept themselves and live in their truths. It's powerful and raw and more importantly, a lesson people of all ages can resonate with.
+                        </p>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+
+                    <!--separate div within a div to create decorative boxes to contain the individual reviews-->
+                    <div style="background-color: rgb(248, 224, 136); padding: 10%;">
+                        <!--Username and Emoji-->
+                        <h4>Jose Luna Soto &#128525; <small>5 months ago</small></h4>
+
+                        <!--4 star emoji for rating-->
+                        <p>&#11088; &#11088; &#11088; &#11088;</p>
+                        <p></p>
+                        <p>
+                            Shark Tale is definitely one of the best movies that I have ever seen in my life. The story may seem basic but the action and drama that it brings is something that should not be pointed out. Moments of true
+                            emotion are seen throughout the story with many being some of if not the most memorable I have seen. The voice actors did a fanominal job as they bring some of the best acting I have heard in years. As expected
+                            from dreamworks they have chose some of the best actor choices as each feels fit for the characters they potray. The movie is also really funny. It is so funny that I fell from my chair. This is my favorite movie
+                            and I would without a doubt recommend it to anyone else that comes across it. P.S. - I didnt like the whale wash scene. It was a little spooky for me to fully enjoy with how realistic they looked
+                        </p>
+
+                        <a href="#Reviews">Jump to Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
+</DOCTYPE>
