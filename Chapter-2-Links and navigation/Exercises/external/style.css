@@ -1,0 +1,36 @@
+
+/* 3 column layout*/
+div {
+    box-sizing: border-box;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 100px;
+  }
+  
+  .left, .right {
+    width: 20%;
+    padding: 20px;
+  }
+  
+  .middle {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* pre tag for review taht is placed on the right-most column*/  
+  pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+  }
