@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0%;
 }
 
 header {
@@ -14,48 +15,46 @@ header h1 {
     font-weight: 700;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #17072b;
+    overflow: hidden;
 
   }
-  
-  li {
+.navbar li {
     float: left;
-  }
-  
-  li a {
+  } 
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  li a:hover {
+.navbar li a:hover {
     background-color: #000000;
+    transition: 0.4s;
   }
-
-
-
-
-nav ul {
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
-
-nav li {
+.navbar li {
     display: inline-block;
     margin-right: 20px;
+    text-align: left;
 }
-
-a {
+.navbar a {
     color: #FFFFFF;
     text-decoration: none;
+    padding: 15px;
+    display: block;
+    width: 100px;
 }
 
 main {
@@ -65,6 +64,8 @@ main {
 .welcome {
     float: left;
     width: 70%;
+    background:#FFFFFF;
+    padding: 1%;
 }
 
 .lineup {
@@ -74,58 +75,40 @@ main {
     color: #FFFFFF;
     padding: 20px;
 }
-
-.images {
-    text-align: center;
+ul.lineupContent {
+  list-style-type: square;
 }
 
-.images img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
 
-footer {
-    background-color: #8c15e9;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
+img {
+  width: 1000px;
+  height: 500px;
+  object-fit: fill;
 }
-
 
 
 * {box-sizing: border-box}
 body {font-family: Arial, Helvetica, sans-serif;}
 
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: #000;
-}
-
-.navbar a.active {
-  background-color: #04AA6D;
-}
 
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
+}
+
+
+/*footer*/
+footer {
+  background-color: #8c15e9;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
 }
