@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+}
+body {
+        background-color: lightgrey;
+        color: rgb(169, 2, 96);
+        text-align: center;
+        font-size: 20px;
+      }
+      
+      h1 {
+        background-color: black;
+        max-height: 100%;
+        color: white;
+        text-align: center;
+      }
+      
+
+.wrapper {
+        margin: auto;
+        width: 80%;
+        padding: 10px;
+        float: none;
+      }
+
+#btn{
+    margin-top: 30px;
+    button{
+        background-color: rgb(255, 157, 248);
+        border-radius: 5px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+
+button:hover{
+    background-color: rgb(126, 8, 142);
+} 
+}
